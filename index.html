@@ -7990,27 +7990,16 @@ ul.footer_sitemap_flex ul {
 }
 .lp-marker.animated {
 	/* アニメーション済みの場合に適用される状態（変更があれば記述） */
-}</style>
-<style>
-/* プレビュー用の最小調整（本番では不要・納品本文には含めません） */
-body { background:#fff; }
-html { scroll-behavior:auto; }
-.wrap_anime01, [class*="anime"] { opacity:1 !important; transform:none !important; visibility:visible !important; }
-.preview-note { background:#5D4D1D; color:#fff; font-size:13px; text-align:center; padding:8px 12px; font-family:'Noto Sans JP',sans-serif; }
-</style>
-</head>
-<body>
-<div class="preview-note">プレビュー（再現・自己完結版）：CSS/画像は全てこのファイルに埋め込み済み。画像はピクスタの透かし入りサンプルです。</div>
-<!-- =================================================================
-     AGA（男性型脱毛症）治療ページ 本文（WordPressに貼るのはこの範囲）
-     既存「しわ・たるみ(/beauty/wrinkles/)」と同じ新デザイン(lp_style.css)を踏襲。
-     追加CSSは下記 <style> 内のみ（すべて .aga-page スコープ＝他ページに影響なし）。
-     画像は本番素材（img/aga_*.webp）。WordPress設置時はメディアにアップし src を差し替え。
-     監修者・支払いアイコンは実サイト画像を流用。
-================================================================= -->
-
-<!-- ▼▼▼ AGAページ専用 追加CSS（.aga-page 内に限定／既存ページへ非干渉） ▼▼▼ -->
-<style>
+}
+/* ===== aga_added.css（本番は lp_style.css へ追記） ===== */
+/* =================================================================
+   AGA（男性型脱毛症）治療ページ 追加CSS
+   ▼追記先ファイル: wp-content/themes/ebinahifu_theme2024/css/lp_style.css
+     └ 上記ファイルの末尾に、この下の内容をそのまま貼り付けてください。
+   ・すべて .aga-page スコープ ＝ 既存ページには一切影響しません。
+   ・編集後はブラウザのスーパーリロード（Ctrl+Shift+R）で反映確認を。
+     （テーマは ?ver= 無しでCSSを読み込むため旧CSSがキャッシュされやすい）
+   ================================================================= */
 .aga-page .aga-bg-gray  { background-color:#F2F1F0; }
 .aga-page .aga-bg-cream { background-color:#FAF8F0; }
 /* 薬剤の詳細リスト（主な作用：…など） */
@@ -8047,7 +8036,23 @@ html { scroll-behavior:auto; }
   .aga-page #greeting .right-image img { width:100%; display:block; }
 }
 </style>
-<!-- ▲▲▲ 追加CSSここまで ▲▲▲ -->
+<style>
+/* プレビュー用の最小調整（本番では不要・納品本文には含めません） */
+body { background:#fff; }
+html { scroll-behavior:auto; }
+.wrap_anime01, [class*="anime"] { opacity:1 !important; transform:none !important; visibility:visible !important; }
+.preview-note { background:#5D4D1D; color:#fff; font-size:13px; text-align:center; padding:8px 12px; font-family:'Noto Sans JP',sans-serif; }
+</style>
+</head>
+<body>
+<div class="preview-note">プレビュー（再現・自己完結版）：CSS/画像は全てこのファイルに埋め込み済み。画像はピクスタの透かし入りサンプルです。</div>
+<!-- =================================================================
+     AGA（男性型脱毛症）治療ページ 本文（WordPressに貼るのはこの範囲）
+     既存「しわ・たるみ(/beauty/wrinkles/)」と同じ新デザイン(lp_style.css)を踏襲。
+     追加CSSは lp_style.css 末尾に追記（同梱 aga_added.css）。すべて .aga-page スコープ＝他ページ非干渉。
+     画像は本番素材（img/aga_*.webp）。WordPress設置時はメディアにアップし src を差し替え。
+     監修者・支払いアイコンは実サイト画像を流用。
+================================================================= -->
 
 <div class="aga-page">
 
