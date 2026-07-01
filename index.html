@@ -8030,6 +8030,13 @@ html { scroll-behavior:auto; }
 .aga-page .aga-check > li::before { content:"\f00c"; font-family:"Font Awesome 5 Free","Font Awesome 6 Free"; font-weight:900; position:absolute; left:.2em; top:.65em; color:#867953; font-size:.95em; }
 /* 進行パターン／効果の目安などの画像 */
 .aga-page .aga-photo { border-radius:6px; }
+/* スマホ：パンくず(hero直下にabsolute配置)が見出しと重なるため、
+   パンくず自体と見出しの上下に適切な余白を確保する */
+@media (max-width:767px){
+  .aga-page .hero-section { padding-bottom:2.6rem; }
+  .aga-page .breadcrumb_wrap { padding-top:.6rem; }
+  .aga-page #greeting { padding-top:2.4rem !important; margin-top:1.6rem; }
+}
 @media (min-width:768px){
   .aga-page .aga-drug > li,
   .aga-page .aga-note,
@@ -8483,11 +8490,11 @@ html { scroll-behavior:auto; }
 <td class="text-start">抜け毛が増えたように感じることがある（初期脱毛）。これは新しい髪の成長を促すための正常な反応です。</td>
 </tr>
 <tr>
-<td>治療開始<br>〜3ヶ月</td>
+<td>〜3ヶ月</td>
 <td class="text-start">抜け毛の量が減り始め、産毛（うぶ毛）が生えてくるのを実感し始める方が多いです。</td>
 </tr>
 <tr>
-<td>治療開始<br>〜6〜12ヶ月</td>
+<td>6〜12ヶ月</td>
 <td class="text-start">薄毛の改善・毛量の増加を実感できます。効果を十分に評価できるのはこの時期です。</td>
 </tr>
 </tbody>
